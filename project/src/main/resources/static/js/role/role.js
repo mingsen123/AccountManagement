@@ -25,9 +25,7 @@ var tableIns = table.render({
 function query() {
     tableIns.reload({
         where: { //设定异步数据接口的额外参数，任意设
-            realName: $("#realName").val()
-            , phone: $("#phone").val()
-            //…
+            roleName: $("#roleName").val()
         }
         , page: {
             curr: 1 //重新从第 1 页开始
